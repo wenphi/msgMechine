@@ -1,0 +1,5 @@
+/home/ywh/work/msgMechine/build/CMakeFiles/rebuild_cache.dir
+/home/ywh/work/msgMechine/build/CMakeFiles/edit_cache.dir
+/home/ywh/work/msgMechine/build/test/CMakeFiles/rebuild_cache.dir
+/home/ywh/work/msgMechine/build/test/CMakeFiles/test1.dir
+/home/ywh/work/msgMechine/build/test/CMakeFiles/edit_cache.dir

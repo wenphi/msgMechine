@@ -125,32 +125,74 @@ test1/fast:
 	cd /home/ywh/work/msgMechine/build && $(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/build
 .PHONY : test1/fast
 
-test.o: test.cpp.o
+# Convenience name for target.
+test/CMakeFiles/testApi.dir/rule:
+	cd /home/ywh/work/msgMechine/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testApi.dir/rule
+.PHONY : test/CMakeFiles/testApi.dir/rule
 
-.PHONY : test.o
+# Convenience name for target.
+testApi: test/CMakeFiles/testApi.dir/rule
+
+.PHONY : testApi
+
+# fast build rule for target.
+testApi/fast:
+	cd /home/ywh/work/msgMechine/build && $(MAKE) -f test/CMakeFiles/testApi.dir/build.make test/CMakeFiles/testApi.dir/build
+.PHONY : testApi/fast
+
+test1.o: test1.cpp.o
+
+.PHONY : test1.o
 
 # target to build an object file
-test.cpp.o:
-	cd /home/ywh/work/msgMechine/build && $(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/test.cpp.o
-.PHONY : test.cpp.o
+test1.cpp.o:
+	cd /home/ywh/work/msgMechine/build && $(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/test1.cpp.o
+.PHONY : test1.cpp.o
 
-test.i: test.cpp.i
+test1.i: test1.cpp.i
 
-.PHONY : test.i
+.PHONY : test1.i
 
 # target to preprocess a source file
-test.cpp.i:
-	cd /home/ywh/work/msgMechine/build && $(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/test.cpp.i
-.PHONY : test.cpp.i
+test1.cpp.i:
+	cd /home/ywh/work/msgMechine/build && $(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/test1.cpp.i
+.PHONY : test1.cpp.i
 
-test.s: test.cpp.s
+test1.s: test1.cpp.s
 
-.PHONY : test.s
+.PHONY : test1.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	cd /home/ywh/work/msgMechine/build && $(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/test.cpp.s
-.PHONY : test.cpp.s
+test1.cpp.s:
+	cd /home/ywh/work/msgMechine/build && $(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/test1.cpp.s
+.PHONY : test1.cpp.s
+
+testApi.o: testApi.cpp.o
+
+.PHONY : testApi.o
+
+# target to build an object file
+testApi.cpp.o:
+	cd /home/ywh/work/msgMechine/build && $(MAKE) -f test/CMakeFiles/testApi.dir/build.make test/CMakeFiles/testApi.dir/testApi.cpp.o
+.PHONY : testApi.cpp.o
+
+testApi.i: testApi.cpp.i
+
+.PHONY : testApi.i
+
+# target to preprocess a source file
+testApi.cpp.i:
+	cd /home/ywh/work/msgMechine/build && $(MAKE) -f test/CMakeFiles/testApi.dir/build.make test/CMakeFiles/testApi.dir/testApi.cpp.i
+.PHONY : testApi.cpp.i
+
+testApi.s: testApi.cpp.s
+
+.PHONY : testApi.s
+
+# target to generate assembly for a file
+testApi.cpp.s:
+	cd /home/ywh/work/msgMechine/build && $(MAKE) -f test/CMakeFiles/testApi.dir/build.make test/CMakeFiles/testApi.dir/testApi.cpp.s
+.PHONY : testApi.cpp.s
 
 # Help Target
 help:
@@ -159,11 +201,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... test1"
 	@echo "... edit_cache"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... test1"
+	@echo "... testApi"
+	@echo "... test1.o"
+	@echo "... test1.i"
+	@echo "... test1.s"
+	@echo "... testApi.o"
+	@echo "... testApi.i"
+	@echo "... testApi.s"
 .PHONY : help
 
 

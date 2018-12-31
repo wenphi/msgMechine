@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11  -shared -Wl,-soname,liblibsrc.so -o liblibsrc.so CMakeFiles/libsrc.dir/robotStateMechine/robotStateMechine.cpp.o CMakeFiles/libsrc.dir/robotStateMechine/robotStates.cpp.o 

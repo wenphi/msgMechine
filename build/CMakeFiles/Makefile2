@@ -60,15 +60,72 @@ CMAKE_SOURCE_DIR = /home/ywh/work/msgMechine
 CMAKE_BINARY_DIR = /home/ywh/work/msgMechine/build
 
 #=============================================================================
+# Directory level rules for directory src
+
+# Convenience name for "all" pass in the directory.
+src/all: src/CMakeFiles/libsrc.dir/all
+
+.PHONY : src/all
+
+# Convenience name for "clean" pass in the directory.
+src/clean: src/CMakeFiles/libsrc.dir/clean
+
+.PHONY : src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/libsrc.dir
+
+# All Build rule for target.
+src/CMakeFiles/libsrc.dir/all:
+	$(MAKE) -f src/CMakeFiles/libsrc.dir/build.make src/CMakeFiles/libsrc.dir/depend
+	$(MAKE) -f src/CMakeFiles/libsrc.dir/build.make src/CMakeFiles/libsrc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ywh/work/msgMechine/build/CMakeFiles --progress-num=1,2,3 "Built target libsrc"
+.PHONY : src/CMakeFiles/libsrc.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/libsrc.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/libsrc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ywh/work/msgMechine/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/libsrc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ywh/work/msgMechine/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/libsrc.dir/rule
+
+# Convenience name for target.
+libsrc: src/CMakeFiles/libsrc.dir/rule
+
+.PHONY : libsrc
+
+# clean rule for target.
+src/CMakeFiles/libsrc.dir/clean:
+	$(MAKE) -f src/CMakeFiles/libsrc.dir/build.make src/CMakeFiles/libsrc.dir/clean
+.PHONY : src/CMakeFiles/libsrc.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/libsrc.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
 test/all: test/CMakeFiles/test1.dir/all
+test/all: test/CMakeFiles/testApi.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
 test/clean: test/CMakeFiles/test1.dir/clean
+test/clean: test/CMakeFiles/testApi.dir/clean
 
 .PHONY : test/clean
 
@@ -84,7 +141,7 @@ test/preinstall:
 test/CMakeFiles/test1.dir/all:
 	$(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/depend
 	$(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ywh/work/msgMechine/build/CMakeFiles --progress-num=1,2 "Built target test1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ywh/work/msgMechine/build/CMakeFiles --progress-num=4,5 "Built target test1"
 .PHONY : test/CMakeFiles/test1.dir/all
 
 # Include target in all.
@@ -111,6 +168,43 @@ test/CMakeFiles/test1.dir/clean:
 
 # clean rule for target.
 clean: test/CMakeFiles/test1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/testApi.dir
+
+# All Build rule for target.
+test/CMakeFiles/testApi.dir/all:
+	$(MAKE) -f test/CMakeFiles/testApi.dir/build.make test/CMakeFiles/testApi.dir/depend
+	$(MAKE) -f test/CMakeFiles/testApi.dir/build.make test/CMakeFiles/testApi.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ywh/work/msgMechine/build/CMakeFiles --progress-num=6,7 "Built target testApi"
+.PHONY : test/CMakeFiles/testApi.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/testApi.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/testApi.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ywh/work/msgMechine/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testApi.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ywh/work/msgMechine/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/testApi.dir/rule
+
+# Convenience name for target.
+testApi: test/CMakeFiles/testApi.dir/rule
+
+.PHONY : testApi
+
+# clean rule for target.
+test/CMakeFiles/testApi.dir/clean:
+	$(MAKE) -f test/CMakeFiles/testApi.dir/build.make test/CMakeFiles/testApi.dir/clean
+.PHONY : test/CMakeFiles/testApi.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/testApi.dir/clean
 
 .PHONY : clean
 

@@ -57,38 +57,38 @@ include test/CMakeFiles/test1.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/CMakeFiles/test1.dir/flags.make
 
-test/CMakeFiles/test1.dir/test.cpp.o: test/CMakeFiles/test1.dir/flags.make
-test/CMakeFiles/test1.dir/test.cpp.o: ../test/test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ywh/work/msgMechine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test1.dir/test.cpp.o"
-	cd /home/ywh/work/msgMechine/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test1.dir/test.cpp.o -c /home/ywh/work/msgMechine/test/test.cpp
+test/CMakeFiles/test1.dir/test1.cpp.o: test/CMakeFiles/test1.dir/flags.make
+test/CMakeFiles/test1.dir/test1.cpp.o: ../test/test1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ywh/work/msgMechine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test1.dir/test1.cpp.o"
+	cd /home/ywh/work/msgMechine/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test1.dir/test1.cpp.o -c /home/ywh/work/msgMechine/test/test1.cpp
 
-test/CMakeFiles/test1.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test1.dir/test.cpp.i"
-	cd /home/ywh/work/msgMechine/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ywh/work/msgMechine/test/test.cpp > CMakeFiles/test1.dir/test.cpp.i
+test/CMakeFiles/test1.dir/test1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test1.dir/test1.cpp.i"
+	cd /home/ywh/work/msgMechine/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ywh/work/msgMechine/test/test1.cpp > CMakeFiles/test1.dir/test1.cpp.i
 
-test/CMakeFiles/test1.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test1.dir/test.cpp.s"
-	cd /home/ywh/work/msgMechine/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ywh/work/msgMechine/test/test.cpp -o CMakeFiles/test1.dir/test.cpp.s
+test/CMakeFiles/test1.dir/test1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test1.dir/test1.cpp.s"
+	cd /home/ywh/work/msgMechine/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ywh/work/msgMechine/test/test1.cpp -o CMakeFiles/test1.dir/test1.cpp.s
 
-test/CMakeFiles/test1.dir/test.cpp.o.requires:
+test/CMakeFiles/test1.dir/test1.cpp.o.requires:
 
-.PHONY : test/CMakeFiles/test1.dir/test.cpp.o.requires
+.PHONY : test/CMakeFiles/test1.dir/test1.cpp.o.requires
 
-test/CMakeFiles/test1.dir/test.cpp.o.provides: test/CMakeFiles/test1.dir/test.cpp.o.requires
-	$(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/test.cpp.o.provides.build
-.PHONY : test/CMakeFiles/test1.dir/test.cpp.o.provides
+test/CMakeFiles/test1.dir/test1.cpp.o.provides: test/CMakeFiles/test1.dir/test1.cpp.o.requires
+	$(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/test1.cpp.o.provides.build
+.PHONY : test/CMakeFiles/test1.dir/test1.cpp.o.provides
 
-test/CMakeFiles/test1.dir/test.cpp.o.provides.build: test/CMakeFiles/test1.dir/test.cpp.o
+test/CMakeFiles/test1.dir/test1.cpp.o.provides.build: test/CMakeFiles/test1.dir/test1.cpp.o
 
 
 # Object files for target test1
 test1_OBJECTS = \
-"CMakeFiles/test1.dir/test.cpp.o"
+"CMakeFiles/test1.dir/test1.cpp.o"
 
 # External object files for target test1
 test1_EXTERNAL_OBJECTS =
 
-test/test1: test/CMakeFiles/test1.dir/test.cpp.o
+test/test1: test/CMakeFiles/test1.dir/test1.cpp.o
 test/test1: test/CMakeFiles/test1.dir/build.make
 test/test1: test/CMakeFiles/test1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ywh/work/msgMechine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test1"
@@ -99,7 +99,7 @@ test/CMakeFiles/test1.dir/build: test/test1
 
 .PHONY : test/CMakeFiles/test1.dir/build
 
-test/CMakeFiles/test1.dir/requires: test/CMakeFiles/test1.dir/test.cpp.o.requires
+test/CMakeFiles/test1.dir/requires: test/CMakeFiles/test1.dir/test1.cpp.o.requires
 
 .PHONY : test/CMakeFiles/test1.dir/requires
 

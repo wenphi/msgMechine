@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named libsrc
+
+# Build rule for target.
+libsrc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libsrc
+.PHONY : libsrc
+
+# fast build rule for target.
+libsrc/fast:
+	$(MAKE) -f src/CMakeFiles/libsrc.dir/build.make src/CMakeFiles/libsrc.dir/build
+.PHONY : libsrc/fast
+
+#=============================================================================
 # Target rules for targets named test1
 
 # Build rule for target.
@@ -123,6 +136,19 @@ test1/fast:
 	$(MAKE) -f test/CMakeFiles/test1.dir/build.make test/CMakeFiles/test1.dir/build
 .PHONY : test1/fast
 
+#=============================================================================
+# Target rules for targets named testApi
+
+# Build rule for target.
+testApi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testApi
+.PHONY : testApi
+
+# fast build rule for target.
+testApi/fast:
+	$(MAKE) -f test/CMakeFiles/testApi.dir/build.make test/CMakeFiles/testApi.dir/build
+.PHONY : testApi/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -131,7 +157,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... libsrc"
 	@echo "... test1"
+	@echo "... testApi"
 .PHONY : help
 
 

@@ -18,13 +18,18 @@ public:
   }
   virtual void operator()()
   {
-    cmdBase = praseCmdtoAction(messageHolder);
-    if (cmdBase != nullptr)
+    if (msgNode->recvJsonMsg(messageHolder))
     {
-      cmdBase->setParams(messageHolder, this);
-      cmdBase->start();
-      delete cmdBase;
+      cmdBase = praseCmdtoAction(messageHolder);
+      if (cmdBase != nullptr)
+      {
+        cmdBase->setParams(messageHolder, this);
+        cmdBase->start();
+        delete cmdBase;
+      }
     }
+    else
+      usleep(100);
   };
   virtual actionBase *praseCmdtoAction(Json::Value JsonData) = 0;
   // bool MsgToParams(Json::Value, std::vector<autoValue> param); //将消息参数提取出来,格式待定,可以是第一个参数命令号...

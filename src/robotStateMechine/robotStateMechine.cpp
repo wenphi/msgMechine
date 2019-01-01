@@ -26,6 +26,7 @@ void robotStateMechine::updateHook()
                     preStateBase = nextStateBase;
                 }
             }
+            preStateBase->filterHook(holder);
         }
         preStateBase->updateHook(this);
     }

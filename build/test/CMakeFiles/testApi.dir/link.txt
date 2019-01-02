@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11  -rdynamic CMakeFiles/testApi.dir/testApi.cpp.o  -o testApi  -L/depend/zeroMQ/libzmq -Wl,-rpath,/depend/zeroMQ/libzmq -ljsoncpp -lzmq 

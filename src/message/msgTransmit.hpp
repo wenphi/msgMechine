@@ -94,7 +94,7 @@ class messageTransmit
             std::cout << " msgTransmit need recv msg first!" << std::endl;
             return false;
         }
-        if (!msgHolder["msgNeedRep"].asBool())
+        if (!msgHolder["msgNeedRep"].asBool() && msgHolder["msgIsRep"].asBool())
         {
             std::cout << " msgTransmit:this msg is not need to reply!" << std::endl;
             return false;
@@ -126,7 +126,7 @@ class messageTransmit
         }
         if (repIsReady)
         {
-            std::cout << "msgTransmit need transmit first!" << std::endl;
+            // std::cout << "msgTransmit need transmit first!" << std::endl;
             return false;
         }
         repIsReady = false;

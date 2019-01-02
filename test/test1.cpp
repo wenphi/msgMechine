@@ -40,7 +40,7 @@ int main()
     signal(SIGINT, stop);
     messageTransmit *msgtr = new messageTransmit(address);
 
-    thread tt(motionHook);
+    // thread tt(motionHook);
     Json::Value jsonData;
     while (!stop_flag)
     {
@@ -52,7 +52,7 @@ int main()
         else
             usleep(10);
     }
-    tt.join();
+    // tt.join();
     delete msgtr;
     cout << "<main> exit done!" << endl;
     return 0;
